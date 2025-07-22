@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'email_auth_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -48,10 +49,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
-                    child: const Icon(
-                      Icons.note_alt,
-                      size: 60,
-                      color: Colors.purple,
+                    child: SvgPicture.asset(
+                      'assets/icons/icon.svg',
+                      height: 200,
+                      width: 200,
                     ),
                   ),
                   const SizedBox(height: 32),
